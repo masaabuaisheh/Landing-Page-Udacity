@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Header Section Style*/
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 50px;
+    border-bottom: 0.5px groove #848484;
+}
+
+.navigation-bar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30%; 
+
+}
+
+.navigation-bar a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #3a3a3a;
+    margin: 20px;
+}
+
+.navigation-bar li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navigation-bar a:hover {
+    color: rgb(245, 151, 148);
+}
+
+.social-media a {
+    margin: 8px;
+    color: rgb(0, 0, 0);
+}
+
+.social-media a:hover {
+    color: rgb(245, 151, 148);
+}
+/*End Header Section Style*/
+
+/*Main Section Style*/
+/*Main Page Style*/
+.title-section h1{
+    text-align: center;
+    margin: 50px;
+    font-family: Cedarville Cursive;
+    font-size: 40px;
+}
+
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figcaption-img {
+    margin: 10px;
+}
+
+.home-page img {
+    width: 100%;
+    height: 50%;
+}
+
+figcaption {
+    text-align: center;
+}
+/*End Main Section Style*/
+
+/*Sign Up Style*/
+.sign-up {
+    background-color: rgb(250, 234, 234);
+    border-bottom: 0.5px groove rgb(250, 234, 234);
+    margin-top: 50px;
+    height: 300px;
+}
+
+.sign-up-form header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+    color: #3a3a3a;
+}
+
+.sign-up-form h2 {
+    padding-bottom: 25px;
+}
+
+.main-sign-up-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+}
+
+.main-sign-up-form input[type="text"] {
+    height: 40px;  
+    width: 250px;  
+    padding: 27px 20px; 
+    border: none;
+}
+
+.main-sign-up-form div {
+    padding: 10px;
+}
+
+.main-sign-up-form button[type="submit"] {
+    height: 50px;  
+    width: 140px;  
+    padding: 0 40px; 
+    color: rgb(255, 255, 255);
+    background-color: rgb(245, 151, 148);
+    border: none;
+
+}
+
+.main-sign-up-form button:hover {
+    border: none;
+    background-color: #404963;
+}
+
+::placeholder {
+    color: #848484;
+}
+/*End Sign Up Style*/
+/*End Main Section Style*/
+
+
+@media (max-width: 768px) {
+    /*Header Section Style*/
+    .header-section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-top: 3px;
+        margin-bottom: 20px;
+        border-bottom: 0.5px groove #848484;
+    }
+
+    .navigation-bar ul {
+        list-style-type: none;
+        display: flex;
+    }    
+    
+    .navigation-bar  {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 10px;
+        padding: 0px;
+    }
+    .navigation-bar a {
+        margin: 3px;
+
+    }
+
+    .navigation-bar a:hover {
+        color: rgb(245, 151, 148);
+    }
+
+    .social-media {
+        font-size: 10px;
+        padding-left: 40px;
+    }
+
+    .social-media a {
+        margin: 3px;
+        color: rgb(0, 0, 0);
+    }
+
+    .social-media a:hover {
+        color: rgb(245, 151, 148);
+    }
+    /*End Header Section Style*/
+
+    /*Main Section Style*/
+    /*Main Page Style*/
+    .title-section h1{
+        text-align: left;
+        margin: 2px;
+        padding-left: 130px;
+        font-family: Cedarville Cursive;
+        font-size: 20px;
+    }
+
+    .home-page {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 60%;
+        margin: 20px;
+    }
+
+    .figcaption-img {
+        margin: 2px;
+    }
+
+    .home-page img {
+        width: 100%;
+        height: 50%;
+    }
+
+    figcaption {
+        display: none;
+    }
+    /*End Main Section Style*/
+
+    /*Sign Up Style*/
+    .sign-up {
+        background-color: rgb(250, 234, 234);
+        border-bottom: 0.5px groove rgb(250, 234, 234);
+        margin-top: 50px;
+        height: 200px;
+        width: 100%;
+    }
+
+    .sign-up-form header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        color: #3a3a3a;
+        font-size: 16px;
+        margin-right: 260px;
+    }
+
+    .sign-up-form h2 {
+        padding-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .sign-up-form h3 {
+        font-size: 12px;
+    }
+
+    .main-sign-up-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+        margin-right: 250px;
+    }
+
+    .main-sign-up-form input[type="text"] {
+        height: 12px;  
+        width: 120px;  
+        padding: 10px 5px; 
+        border: none;
+    }
+
+    .main-sign-up-form div {
+        padding: 5px;
+    }
+
+    .main-sign-up-form button[type="submit"] {
+        height: 20px;  
+        width: 120px;  
+        padding: 0 20px; 
+        color: rgb(255, 255, 255);
+        background-color: rgb(245, 151, 148);
+        border: none;
+
+    }
+
+    .main-sign-up-form button:hover {
+        border: none;
+        background-color: #404963;
+    }
+
+    ::placeholder {
+        color: #848484;
+        font-size: 10px;
+    }
+    /*End Sign Up Style*/
+    /*End Main Section Style*/
+
+}

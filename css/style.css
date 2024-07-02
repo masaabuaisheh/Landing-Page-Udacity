@@ -18,27 +18,27 @@ html {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 3px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 150px;
     border-bottom: 0.5px groove #848484;
+    position: sticky;
+    top: 0; 
+    background-color: #fff; 
+    z-index: 1000;
 }
 
 .navigation-bar ul {
     list-style-type: none;
     display: flex;
+    padding-left: 0; 
 }
-
 
 .navigation-bar {
     display: flex;
-    flex-direction: row;
     padding-left: 30%; 
-
 }
 
 .navigation-bar a {
-    display: flex;
-    flex-direction: row;
     text-decoration: none;
     color: #3a3a3a;
     margin: 20px;
@@ -50,7 +50,7 @@ html {
 }
 
 .navigation-bar a:hover {
-    color: rgb(245, 151, 148);
+    background-color: rgb(245, 151, 148);
 }
 
 .social-media a {
@@ -304,4 +304,79 @@ figcaption {
     /*End Sign Up Style*/
     /*End Main Section Style*/
 
+}
+
+/* Additional Media Queries for Further Responsiveness */
+@media (max-width: 600px) {
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px 10px;
+    }
+
+    .about-me-section,
+    .reader-favourites-section,
+    .latest-on-instagram-section {
+        margin: 10px 0;
+        border: 0.5px groove #d5d5d5;
+    }
+
+    .about-me-image img,
+    .first-product img,
+    .second-product img,
+    .third-product img,
+    .latest-product img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .about-me-information p,
+    .first-product p,
+    .second-product p,
+    .third-product p,
+    .latest-on-instagram-header h2 {
+        font-size: 14px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .fussy-deodorant,
+    .b-corp-beauty-skincare-brands,
+    .korean-skincare-routine {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .fussy-deodorant-image img,
+    .b-corp-beauty-skincare-brands-image img,
+    .korean-skincare-routine-image img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .fussy-deodorant-header h3,
+    .b-corp-beauty-skincare-brands-header h3,
+    .korean-skincare-routine-header h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .fussy-deodorant-header p,
+    .b-corp-beauty-skincare-brands-header p,
+    .korean-skincare-routine-header p {
+        font-size: 14px;
+        width: 90%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .read-more-info {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+        margin: 10px 0;
+    }
 }

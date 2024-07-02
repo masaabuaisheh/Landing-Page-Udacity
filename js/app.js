@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     });
+
     
     const scrollTopBtn = document.getElementById('scrollToTopBtn');
     window.addEventListener('scroll', () => {
